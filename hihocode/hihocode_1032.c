@@ -28,7 +28,7 @@ acacdas
 ***************************************************************************/
 //传说中的 Manacher 算法 （ 找到最长的回文子串 ）
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -80,9 +80,45 @@ int main(void)
 		printf("%c", *(pointer + count));
 	}
 	printf("\n");
+}   */
+
+/************************************************************************/
+#include <stdio.h>
+#include <string.h>
+
+int reverse[2000011];	//
+
+char string[1000005];	// input string
+
+int length;		// length of input stirng
+
+int max_center;		// center of max legnth reverse string
+
+int max_length;		// max length of reverse string
+
+int max_right_boundry;  // max_right boundry of reverse string.
+
+int max_boundry_center;	// center of reverse string which has the max right boundry
+
+int max_right_boundry_left // left boundry of reverse string which has the max right boundry.
+
+void function(void);	// deals with one test case.
+
+int compute(int index);	//
+
+int complete_force(int index);	//
+
+int half_force(int length, int head, int tail);	//
+
+int main(void)
+{
+	int N;
+	scanf("%d", &N);
+	for(int i = 0; i < n; i++)
+	{
+		function();
+	}
+	return 0;
 }
-
-
-
 
 
