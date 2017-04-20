@@ -72,7 +72,7 @@ int main(void)
 #include <stdio.h>
 #include <string.h>
 
-int reverse[2000011];	//
+int reverse[2000011];	
 
 char string[1000005];	// input string
 
@@ -84,13 +84,13 @@ int max_length;		// max length of reverse string
 
 int max_right_boundry;  // max_right boundry of reverse string.
 
-int max_boundry_center;	// center of reverse string which has the max right boundry
+int max_right_boundry_center;	// center of reverse string which has the max right boundry
 
-int max_right_boundry_left // left boundry of reverse string which has the max right boundry.
+int max_right_boundry_left; // left boundry of reverse string which has the max right boundry.
 
 void function(void);	// deals with one test case.
 
-int compute(int index);	//
+int compute(int index);	// 
 
 int complete_force(int index);	//
 
@@ -100,7 +100,7 @@ int main(void)
 {
 	int N;
 	scanf("%d", &N);
-	for(int i = 0; i < n; i++)
+	for(int i = 0; i < N; i++)
 	{
 		function();
 	}
@@ -223,3 +223,12 @@ int half_force(int confirm_length, int head, int tail) {
     return confirm_length + count;  
 } 
 
+
+
+
+
+
+// http://blog.csdn.net/octopusflying/article/details/50520207 
+// https://segmentfault.com/a/1190000003914228
+// http://blog.csdn.net/yzl_rex/article/details/7908259
+// 数据结构算法这类好难啊， 我还是先多看点书吧。哎跟不上节奏！
