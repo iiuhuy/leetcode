@@ -4,7 +4,6 @@
 #Example:
 #```python
 # Given nums = [2, 7, 11, 15], target = 9,
-
 # Because nums[0] + nums[1] = 2 + 7 = 9,
 # return [0, 1].
 # ```
@@ -21,6 +20,6 @@ class Solution():
                 d[n] = i
                 
 if __name__ == '__main__':
-    print(Solution().twoSum((2, 7, 11, 15), 13))
+    print(Solution().twoSum((1, 2, 3, 4, 5, 6, 7), 13))
     
     
