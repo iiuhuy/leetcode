@@ -24,7 +24,7 @@ var threeSumClosest = function (nums, target) {
       }
       if (sum < target) {
         a++;
-      } else if (sum < target) {
+      } else if (sum > target) {
         b--;
       } else {
         return target;
