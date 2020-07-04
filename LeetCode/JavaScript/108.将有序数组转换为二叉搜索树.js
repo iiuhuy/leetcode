@@ -23,7 +23,7 @@ var sortedArrayToBST = function (nums) {
   const mid = nums.length >> 1;
   const root = new TreeNode(nums[mid]);
 
-  root.left = sortedArrayToBSTq(nums.slice(0, mid));
+  root.left = sortedArrayToBST(nums.slice(0, mid));
   root.right = sortedArrayToBST(nums.slice(mid + 1));
   return root;
 };
