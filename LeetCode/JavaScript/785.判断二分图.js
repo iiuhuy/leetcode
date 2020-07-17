@@ -10,7 +10,6 @@
  * @return {boolean}
  */
 var isBipartite = function (graph) {
-  /* bfs + 染色法 */
   const colors = new Array(graph.length).fill(0); // 用于存储染色信息的数组，0 表示未染色，1 表示染成红色，2 表示染成绿色
 
   for (let i = 0; i < graph.length; i++) {
