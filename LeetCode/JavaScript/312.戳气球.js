@@ -10,6 +10,7 @@
  * @return {number}
  */
 var maxCoins = function (nums) {
+  // 看的题解。
   let len = nums.length;
   // 添加两侧的虚拟气球
   let points = [1, ...nums, 1];
