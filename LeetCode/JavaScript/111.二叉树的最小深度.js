@@ -16,9 +16,9 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var minDepth = function(root) {
+var minDepth = function (root) {
   if (root == null) return 0;
-  
+
   if (root.left && root.right) {
     return 1 + Math.min(minDepth(root.left), minDepth(root.right));
   } else if (root.left) {
@@ -28,7 +28,5 @@ var minDepth = function(root) {
   } else {
     return 1;
   }
- 
 };
 // @lc code=end
-
